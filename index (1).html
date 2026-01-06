@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canada’s Role in Space Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0b1d3a, #020617 70%);
+      color: #e5e7eb;
+      line-height: 1.8;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2, 6, 23, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 1.2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #60a5fa; }
+
+    section {
+      padding: 7rem 3rem 5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      max-width: 900px;
+      font-size: 1.15rem;
+      color: #cbd5f5;
+    }
+
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      color: #93c5fd;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 0 40px rgba(96,165,250,0.25);
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 0 50px rgba(56, 189, 248, 0.12);
+    }
+
+    iframe {
+      border-radius: 20px;
+      width: 100%;
+      height: 500px;
+      box-shadow: 0 0 40px rgba(96,165,250,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .content { grid-template-columns: 1fr; }
+      .hero h2 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Canada in Space</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#robotics">Robotics</a>
+    <a href="#partnerships">Partnerships</a>
+    <a href="#values">Values</a>
+    <a href="#video">Video</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Canada’s Role in Space Today</h2>
+  <p>
+    When people think about space exploration, they imagine powerful nations racing to be first.
+    Canada never tried to dominate space. Instead, Canada focused on contribution over competition.
+    Today, we explore how Canada became essential in space through robotics, partnerships, and peaceful leadership.
+  </p>
+</section>
+
+<section id="robotics">
+  <h2 class="section-title">1. Leadership in Space Robotics</h2>
+  <div class="content">
+    <div class="card">
+      <p>
+        Canada’s most important contribution to space exploration is robotics. The Canadarm first flew in 1981
+        and allowed astronauts to safely deploy satellites and move heavy equipment in orbit.
+      </p>
+      <p>
+        Canadarm2 and Dextre later became essential to building and maintaining the International Space Station.
+        Canada is now developing Canadarm3 for the Lunar Gateway, continuing this legacy into deep space.
+      </p>
+    </div>
+    <img src="images/canadarm.jpg" alt="Canadarm on ISS">
+  </div>
+</section>
+
+<section id="partnerships">
+  <h2 class="section-title">2. International Partnerships</h2>
+  <div class="content">
+    <img src="images/jwst.jpg" alt="James Webb Space Telescope">
+    <div class="card">
+      <p>
+        Canada believes space exploration works best through cooperation. By partnering with NASA and other agencies,
+        Canada contributes specialized technology in exchange for scientific access.
+      </p>
+      <p>
+        Canada provided critical instruments for the James Webb Space Telescope and earned an astronaut seat on Artemis II,
+        sending Jeremy Hansen around the Moon.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="values">
+  <h2 class="section-title">3. Peaceful Leadership & Canadian Values</h2>
+  <div class="content">
+    <div class="card">
+      <p>
+        Canada supports the peaceful use of space and signed the Artemis Accords to promote transparency,
+        sustainability, and responsible exploration.
+      </p>
+      <p>
+        Space technology also benefits Canadians on Earth through climate research, disaster response,
+        and scientific innovation.
+      </p>
+    </div>
+    <img src="images/gateway.png" alt="Lunar Gateway Concept">
+  </div>
+</section>
+
+<section id="video">
+  <h2 class="section-title">Video: Canada in Space</h2>
+  <div class="card" style="margin-top:2rem;">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+  </div>
+</section>
+
+<footer>
+  © Canada in Space — Educational Project
+</footer>
+
+</body>
+</html>
